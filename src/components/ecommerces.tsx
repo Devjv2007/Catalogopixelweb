@@ -49,11 +49,11 @@ const items: Item[] = [
 
 const Ecommerces = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} id="ecommerces" className="py-32 bg-slate-950 scroll-mt-28">
+    <section ref={ref} id="ecommerces" className="py-32 bg-white scroll-mt-28">
       <div className="px-6 mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-white">E-commerces</h2>
+          <h2 className="text-4xl font-bold text-black">E-commerces</h2>
           <p className="mt-4 text-slate-400">
             Lojas virtuais focadas em conversão, performance e experiência do usuário.
           </p>
@@ -64,7 +64,7 @@ const Ecommerces = forwardRef<HTMLElement>((_, ref) => {
           {items.map((item) => (
             <article
               key={item.n}
-              className="overflow-hidden transition border rounded-2xl border-white/10 bg-slate-900 hover:border-blue-500/40"
+              className="overflow-hidden transition bg-white border border-black rounded-2xl hover:border-blue-500/40"
             >
               {/* Image */}
               <div className="h-56 overflow-hidden">
@@ -77,7 +77,7 @@ const Ecommerces = forwardRef<HTMLElement>((_, ref) => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="mb-2 text-lg font-semibold text-white">
+                <h3 className="mb-2 text-lg font-semibold text-black">
                   {item.n}
                 </h3>
 
@@ -85,7 +85,7 @@ const Ecommerces = forwardRef<HTMLElement>((_, ref) => {
                   {item.desc}
                 </p>
 
-                <ul className="mb-6 space-y-2 text-sm text-slate-300">
+                <ul className="mb-6 space-y-2 text-sm text-black">
                   {item.features.map((f) => (
                     <li key={f} className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
@@ -97,7 +97,7 @@ const Ecommerces = forwardRef<HTMLElement>((_, ref) => {
                 <a
                   href={item.live}
                   target="_blank"
-                  className="inline-flex items-center justify-center w-full py-2 text-sm font-medium text-white transition bg-blue-600 rounded-lg hover:bg-blue-500"
+                  className="inline-flex items-center justify-center w-full py-2 text-sm font-medium text-black transition bg-blue-600 rounded-lg hover:bg-blue-500"
                 >
                   Ver loja →
                 </a>

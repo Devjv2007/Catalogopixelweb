@@ -12,30 +12,32 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={[
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
-        scrolled
-          ? "backdrop-blur-md bg-slate-950/70 shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
-          : "bg-transparent"
-      ].join(" ")}
-    >
+          <header
+  className={[
+    "sticky top-0 w-full z-50 transition-all duration-300",
+    scrolled
+      ? "backdrop-blur-md  shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+      : "bg-transparent"
+  ].join(" ")}
+>
+
+
 
       <div
         className={[
-          "absolute bottom-0 left-0 right-0 h-px transition-opacity duration-300",
+          "absolute bottom-3 left-0 right-0 m h-px transition-opacity duration-300",
           scrolled
-            ? "opacity-100 bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent"
+            ? "opacity-100 bg-gradient-to-r from-transparent via-blue-500 to-transparent"
             : "opacity-0"
         ].join(" ")}
       />
 
       <div className="container h-20 px-6 mx-auto">
-        <div className="relative flex items-center h-full">
+        <div className="relative flex items-center h-full ">
 
           <div className="flex items-center gap-3">
             <img
-              src="pixelweb.png"
+              src="pixelweb.png-Photoroom.png"
               alt="Pixelweb"
               className="select-none h-14"
             />
@@ -52,7 +54,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="relative text-sm font-medium transition text-white/80 hover:text-white"
+                className="relative text-sm font-medium text-black transition hover:text-white"
               >
                 {item.label}
                 <span className="absolute left-0 w-0 h-px transition-all duration-300 -bottom-1 bg-gradient-to-r from-cyan-400 to-indigo-500 hover:w-full" />

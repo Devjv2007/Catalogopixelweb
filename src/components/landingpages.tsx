@@ -17,10 +17,10 @@ const items: Item[] = [
 
 const LandingPages = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} id="pages" className="py-32 bg-slate-950 scroll-mt-28">
+    <section ref={ref} id="pages" className="py-32 bg-white scroll-mt-28">
       <div className="px-6 mx-auto max-w-7xl">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-black">
             Landing Pages
           </h2>
           <p className="mt-4 text-slate-400">
@@ -33,7 +33,7 @@ const LandingPages = forwardRef<HTMLElement>((_, ref) => {
           {items.map((item) => (
             <article
               key={item.n}
-              className="overflow-hidden border rounded-2xl border-white/10 bg-slate-900"
+              className="overflow-hidden text-black border border-black rounded-2xl"
             >
               {/* Image */}
               <div className="h-64 overflow-hidden">
@@ -46,7 +46,7 @@ const LandingPages = forwardRef<HTMLElement>((_, ref) => {
 
               {/* Content fixo */}
               <div className="flex items-center justify-between gap-4 p-6">
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-black ">
                   {item.n}
                 </h3>
 
